@@ -1,0 +1,13 @@
+---
+layout: default
+title: sketches
+---
+
+<p>List of the p5.js sketches collection:</p>
+
+
+{% for item in site.sketches %}
+<div class="sketch">
+    <a href="{{ item.url }}">{{ item.name }}</a>
+</div>
+{% endfor %}

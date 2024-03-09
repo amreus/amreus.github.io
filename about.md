@@ -1,0 +1,17 @@
+---
+layout: default
+title: about
+---
+<!--
+I am not dumb by most measures. Yet I don't consider myself smart either by any means.  I have a certain set of skills and knowledge that I am very good at but that's rather narrow. Under-educated, likely, with large gaps in knowledge that it seems to me most people take for granted - socialness in particular. I'm becoming aware that the lack of social understanding has been a big factor in how I got to where I am. It only took 50  years.  I'm not a reader nor deep thinker.  Some of my family members work as lawerys, engineers and accountants.  I'm a grease monkey with anger issues.
+
+Still I feel as though I have things to say, share, and teach that other people would benefit from but when I go to put something down, it all goes away. I mean who out there really cares what I have to say, right?  Still, I am hoping that making the attempt will act as some clarifying agent and flocculate these tiny particles of thoughts into something more coherent.
+
+I've had a life-long fascination with computers which has become an addiction more than anything positive.  
+
+What the fuck am I saying?
+-->
+
+This is a site by a bored-at-work kids are grown mid-life grease monkey just entertaining myself by attempting to learn new things from around the Internets.
+
+It is a very plain site because I'm learning jekyll and have started with the `--blank` option so there is no theme - just some basic css.
