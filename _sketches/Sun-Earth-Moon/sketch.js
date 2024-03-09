@@ -4,7 +4,7 @@ let dy, mn, yr;
 let bgStars;
 
 function setup() {
-  createCanvas(size, size);
+  createCanvas(size, size).parent('sketch');
   frameRate(40);
   earth = new Earth();
   moon = new Moon();

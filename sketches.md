@@ -3,7 +3,8 @@ title: p5 Sketches
 layout: page
 permalink: /sketches/
 ---
-Content
+
+Attempting to setup a site using jekyll with some p5.js content.
 
 {% for sketch in site.sketches %}
 <div>
