@@ -31,7 +31,7 @@ function draw() {
 
     if (!onScreen(p)) {
       p.x = random(width);
-      p.y = random(height);
+      p.y = (height);
     }
   }
 }
@@ -48,4 +48,8 @@ function reseed() {
   noiseSeed(millis());
   hueSlider.value(random(330));
   noiseSlider.value(random(1000));
+  for (let p of particles) {
+    p.x = random(width);
+    p.y = random(height);
+  }
 }

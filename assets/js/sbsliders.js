@@ -14,16 +14,16 @@ class Slider {
           this.idNum
         }">${this.elt.value()}</output>`
       );
+      outputSpan.attribute('style', 'margin-left: 0.5em;vertical-align:top;')
       outputSpan.parent(sliderDiv);
-      outputSpan.style('margin:0 1em')
       this.elt.attribute(
         "oninput",
         `sb_output${this.idNum}.value = sb_slider${this.idNum}.value`
-      );
-      const labelSpan = createSpan(
-        `<label for="${this.elt.id()}">${label}</label>`
-      );
-      labelSpan.style('margin-left:1em');
+        );
+        const labelSpan = createSpan(
+          `<label for="${this.elt.id()}">${label}</label>`
+          );
+        labelSpan.attribute('style', 'margin-left: 0.5em;vertical-align:top;')
       labelSpan.parent(sliderDiv);
       Slider.nextId++;
       return this;
@@ -34,7 +34,7 @@ class Slider {
       } else {
         this.elt.value(x);
         const id = "sb_output" + this.idNum;
-        document.getElementById(id).value = parseInt(x);
+        document.getElementById(id).value = parseInt(x, 10);
       }
     }
   }

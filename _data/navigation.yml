@@ -2,7 +2,9 @@
   link: /
 - name: blog
   link: /blog.html
+  visible: no
 - name: about
   link: /about.html
+  visible: no
 - name: sketches
   link: /sketches.html
