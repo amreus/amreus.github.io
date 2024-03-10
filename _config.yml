@@ -5,3 +5,4 @@ title: "amreus" # the name of your site, e.g. ACME Corp.
 collections:
   sketches:
     output: yes
+    sort_by: date
