@@ -1,6 +1,8 @@
 let particles = [];
 let num = 5000;
 let noiseScale = 0.01;
+let speed = 3;
+let speedSlider;
 
 function setup() {
   createCanvas(800, 600);
@@ -8,8 +10,9 @@ function setup() {
   for (let i = 0; i < num; i++) {
     particles.push(createVector(random(width), random(height)));
   }
-  noiseSlider = new Slider("noise", 0, 1000, 100, 10);
-  hueSlider = new Slider("hue", 0, 330, 180, 30);
+  noiseSlider = new Slider("noise", 0, 1000, 100);
+  hueSlider = new Slider("color", 0, 330, 180, 30);
+  speedSlider = new Slider('speed', 0, 5, 1, 0.1);
   createButton("Randomize").mousePressed(() => {
     reseed();
   });
@@ -26,8 +29,8 @@ function draw() {
     noiseScale = 1 / noiseSlider.value();
     let n = noise(p.x * noiseScale, p.y * noiseScale);
     let a = n * TAU + PI / 2;
-    p.x += cos(a);
-    p.y += sin(a);
+    p.x += speedSlider.value() * cos(a);
+    p.y += speedSlider.value() * sin(a);
 
     if (!onScreen(p)) {
       p.x = random(width);
@@ -48,6 +51,7 @@ function reseed() {
   noiseSeed(millis());
   hueSlider.value(random(330));
   noiseSlider.value(random(1000));
+  speedSlider.value(1 + floor(random(5)));
   for (let p of particles) {
     p.x = random(width);
     p.y = random(height);
