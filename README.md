@@ -1,4 +1,0 @@
-
-# amreus.github.io
-
-Greetings.
