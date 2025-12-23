@@ -13,6 +13,8 @@ example.
 It can be modified to open any tiddler by replacing `$:/AdvancedSearch` with the
 name of the tiddler.
 
-`javascript:(function(){var l=location;l.href = l.protocol+'//'+(l.host ? l.host : l.pathname)+'#'+encodeURIComponent('$:/AdvancedSearch');})();`
+```
+javascript:(function(){var l=location;l.href = l.protocol+'//'+(l.host ? l.host : l.pathname)+'#'+encodeURIComponent('$:/AdvancedSearch');})();
+```
 
 
