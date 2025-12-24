@@ -3,3 +3,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "amreus' place" # the name of your site, e.g. ACME Corp.
 
 theme: minima
+
+github_username: amreus
+
+description: Short hopefully interesting post on a variety of topics.
