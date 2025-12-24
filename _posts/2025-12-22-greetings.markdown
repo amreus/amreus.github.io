@@ -7,6 +7,5 @@ categories: jekyll update
 
 Greetings. I hope you're doing well today.
 
-This is a place to post about my computer project of the moment.  I "work" on
-things that interest me at the moment and thought maybe a record or jounal
-might help to organize the ideas rattling around my head.
+This is a place to post hopefully interesting snippets about whatever is
+holding my interest at the moment
