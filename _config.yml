@@ -1,9 +1,0 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "amreus" # the name of your site, e.g. ACME Corp.
-
-theme: minima
-
-github_username: amreus
-
-description: Short posts on a variety of topics.
